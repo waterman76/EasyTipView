@@ -232,9 +232,9 @@ open class EasyTipView: UIView {
     
     override open var description: String {
         
-        let type = "'\(String(reflecting: type(of: self)))'".components(separatedBy: ".").last!
+        let tiptype = "'\(String(reflecting: type(of: self)))'".components(separatedBy: ".").last!
         
-        return "<< \(type) with text : '\(text)' >>"
+        return "<< \(tiptype) with text : '\(text)' >>"
     }
     
     fileprivate weak var presentingView: UIView?
