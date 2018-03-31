@@ -357,11 +357,12 @@ open class EasyTipView: UIView {
         let refViewFrame = presentingView!.convert(presentingView!.bounds, to: superview);
         
         let superviewFrame: CGRect
-        if let scrollview = superview as? UIScrollView {
-          superviewFrame = CGRect(origin: scrollview.frame.origin, size: scrollview.contentSize)
-        } else {
+        // CogZum
+        //if let scrollview = superview as? UIScrollView {
+        //  superviewFrame = CGRect(origin: scrollview.frame.origin, size: scrollview.contentSize)
+        //} else {
           superviewFrame = superview.frame
-        }
+        //}
         
         var frame = computeFrame(arrowPosition: position, refViewFrame: refViewFrame, superviewFrame: superviewFrame)
         
